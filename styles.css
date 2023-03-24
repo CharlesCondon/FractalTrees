@@ -1,0 +1,61 @@
+:root {
+    --pad: max(20px, 4vmin);
+    --c-bg: hsl(0, 0%, 5%);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+}
+
+#slide {
+    position: fixed;
+    top: calc(var(--pad)*2);
+    left: calc(var(--pad)*2);
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 4;
+}
+#branches {
+    position: fixed;
+    top: calc(var(--pad)*4);
+    left: calc(var(--pad)*2);
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 5;
+}
+
+#page {
+    background-color: rgba(0, 0, 0, .75);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#background {
+    position: fixed;
+    left: var(--pad);
+    right: var(--pad);
+    top: var(--pad);
+    bottom: var(--pad);
+    overflow: hidden;
+    display: flex;
+    border: 6px double white;
+    z-index: 2;
+}
+
+#defaultCanvas0 {
+    display: table-cell;
+    vertical-align: top;
+    z-index: 3;
+}
