@@ -48,3 +48,11 @@ function branch(len) {
     pop();
   }
 }
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  let info = document.getElementById("info");
+  let blurb = document.getElementById("infoBox");
+  info.onclick = function() {
+    blurb.classList.toggle("hide");
+  }
+});

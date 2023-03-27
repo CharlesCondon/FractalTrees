@@ -85,6 +85,45 @@ canvas {
     z-index: 3;
 }
 
+#info {
+    position: fixed;
+    right: calc(var(--pad) * 1.5);
+    top: calc(var(--pad) * 1.5);
+    filter: invert(100%);
+    width: 70px;
+    z-index: 50;
+}
+#info:hover {
+    filter: invert(50%);
+}
+#info:active {
+    filter: invert(25%);
+}
+
+#infoBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(30, 44, 62, 1);
+    padding: 15px;
+    width: 75%;
+    border: 2px solid white;
+    z-index: 30;
+}
+#infoBox h1 {
+    text-align: center;
+    font-size: 50px;
+}
+#infoBox p {
+    font-size: 25px;
+}
+
+.hide {
+    display: none;
+}
+
 @media (max-width: 600px) {
     #slide {
         padding: 5px;
