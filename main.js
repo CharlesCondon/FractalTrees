@@ -8,10 +8,11 @@ function setup() {
   angleSlider = createSlider(0, TWO_PI, PI / 4, 0.01);
   branchSliderL = createSlider(0, .73, 0, .01);
   branchSliderR = createSlider(0, .73, 0, .01);
-  initCanvas.parent("background");
+  initCanvas.parent("backgroundCont");
   angleSlider.parent("slide");
-  branchSliderL.parent("branches");
-  branchSliderR.parent("branches");
+  branchSliderL.parent("branchesL");
+  branchSliderR.parent("branchesR");
+  console.log(windowHeight);
 }
 
 function draw() {
@@ -21,8 +22,14 @@ function draw() {
   branchNumR = branchSliderR.value();
   stroke(255);
   strokeWeight(2);
-  translate(width * 0.47, height * 0.92);
-  branch(windowHeight * .25);
+  if (windowHeight > 740) {
+    translate(width * 0.47, height * 0.92);
+    branch(windowHeight * .2);
+  }
+  else {
+    translate(width * 0.44, height * 0.92);
+    branch(windowHeight * .15);
+  }
 }
 
 function branch(len) {
