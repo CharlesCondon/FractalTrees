@@ -28,7 +28,7 @@ function draw() {
     branch(windowHeight * .2);
   }
   else {
-    translate(width * 0.44, height * 0.92);
+    translate(width * 0.47, height * 0.90);
     branch(windowHeight * .15);
   }
 }

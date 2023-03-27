@@ -115,4 +115,10 @@ canvas {
     #branchCont div{
         margin: 5px;
     }
+    #backgroundCont {
+        left: calc(var(--pad) / 2);
+        right: calc(var(--pad) / 2);
+        top: calc(var(--pad) / 2);
+        bottom: calc(var(--pad) / 2);
+    }
 }
