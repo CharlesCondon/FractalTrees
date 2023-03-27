@@ -76,6 +76,7 @@ canvas {
     display: flex;
     border: 6px double white;
     z-index: 2;
+    box-shadow: 1px 1px 25px #000000;
 }
 
 #defaultCanvas0 {

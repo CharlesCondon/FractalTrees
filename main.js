@@ -6,14 +6,15 @@ let randoL = (Math.random() * .73);
 let randoR = (Math.random() * .73);
 
 function setup() {
+  let randoA = (Math.random() * (PI));
   var initCanvas = createCanvas(windowWidth, windowHeight);
-  angleSlider = createSlider(0, TWO_PI, PI / 4, 0.01);
+  angleSlider = createSlider(0, TWO_PI, randoA, 0.01);
   branchSliderL = createSlider(0, .73, randoL, .01);
   branchSliderR = createSlider(0, .73, randoR, .01);
   initCanvas.parent("backgroundCont");
   angleSlider.parent("slide");
-  branchSliderL.parent("branchesL");
-  branchSliderR.parent("branchesR");
+  branchSliderL.parent("branchesR");
+  branchSliderR.parent("branchesL");
 }
 
 function draw() {
