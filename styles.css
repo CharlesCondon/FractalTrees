@@ -162,3 +162,32 @@ canvas {
         bottom: calc(var(--pad) / 2);
     }
 }
+@media (max-width: 801px) { 
+    #info {
+        width: 60px;
+    }
+    #infoBox h1 {
+        font-size: 30px;
+    }
+    #infoBox p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 321px) { 
+    #infoBox h1 {
+        font-size: 25px;
+    }
+    #infoBox p {
+        font-size: 10px;
+    }
+    #info {
+        width: 40px;
+    }
+    #backgroundCont {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 3px double white;
+    }
+}
