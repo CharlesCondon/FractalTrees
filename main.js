@@ -18,7 +18,7 @@ function setup() {
 
   let down = document.getElementById("down");
   down.onclick = function() {
-    saveCanvas(initCanvas, 'myCanvas', 'jpg');
+    saveCanvas(initCanvas, 'myFractal');
   }
 }
 
@@ -59,5 +59,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
   let blurb = document.getElementById("infoBox");
   info.onclick = function() {
     blurb.classList.toggle("hide");
+    blurb.classList.toggle("animate__fadeIn");
   }
 });
