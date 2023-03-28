@@ -15,6 +15,11 @@ function setup() {
   angleSlider.parent("slide");
   branchSliderL.parent("branchesR");
   branchSliderR.parent("branchesL");
+
+  let down = document.getElementById("down");
+  down.onclick = function() {
+    saveCanvas(initCanvas, 'myCanvas', 'jpg');
+  }
 }
 
 function draw() {
@@ -29,8 +34,8 @@ function draw() {
     branch(windowHeight * .2);
   }
   else {
-    translate(width * 0.47, height * 0.90);
-    branch(windowHeight * .15);
+    translate(width * 0.47, height * 0.8);
+    branch(windowHeight * .12);
   }
 }
 

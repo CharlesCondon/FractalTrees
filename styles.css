@@ -90,7 +90,7 @@ canvas {
     right: calc(var(--pad) * 1.5);
     top: calc(var(--pad) * 1.5);
     filter: invert(100%);
-    width: 70px;
+    width: 60px;
     z-index: 50;
 }
 #info:hover {
@@ -109,7 +109,8 @@ canvas {
     background-color: rgba(30, 44, 62, 1);
     padding: 15px;
     width: 75%;
-    border: 2px solid white;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 15px #000000;
     z-index: 30;
 }
 #infoBox h1 {
@@ -118,6 +119,21 @@ canvas {
 }
 #infoBox p {
     font-size: 25px;
+}
+
+#down {
+    position: fixed;
+    right: calc(var(--pad) * 4);
+    top: calc(var(--pad) * 1.5);
+    filter: invert(100%);
+    width: 60px;
+    z-index: 50;
+}
+#down:hover {
+    filter: invert(50%);
+}
+#down:active {
+    filter: invert(25%);
 }
 
 .hide {
@@ -161,11 +177,17 @@ canvas {
         top: calc(var(--pad) / 2);
         bottom: calc(var(--pad) / 2);
     }
+    #down {
+        width: 40px;
+        right: 0;
+        left: calc(var(--pad) * 1.5);
+        top: calc(var(--pad) * 1.5);
+    }
+    #info {
+        width: 40px;
+    }
 }
 @media (max-width: 801px) { 
-    #info {
-        width: 60px;
-    }
     #infoBox h1 {
         font-size: 30px;
     }
@@ -182,6 +204,13 @@ canvas {
     }
     #info {
         width: 40px;
+        right: calc(var(--pad));
+        top: calc(var(--pad));
+    }
+    #down {
+        width: 40px;
+        left: calc(var(--pad));
+        top: calc(var(--pad));
     }
     #backgroundCont {
         left: 0;
