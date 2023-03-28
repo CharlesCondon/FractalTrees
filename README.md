@@ -1,6 +1,6 @@
 # FractalTrees
 
-## The link to the site: [HERE](https://charlescondon.github.io/FractalTrees/)
+The link to the site: [HERE](https://charlescondon.github.io/FractalTrees/)
 
 <br>
 
