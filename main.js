@@ -28,12 +28,13 @@ function draw() {
   branchNumL = branchSliderL.value();
   branchNumR = branchSliderR.value();
   stroke(255);
-  strokeWeight(2);
   if (windowHeight > 740) {
+    strokeWeight(2);
     translate(width * 0.47, height * 0.92);
     branch(windowHeight * .2);
   }
   else {
+    strokeWeight(1);
     translate(width * 0.47, height * 0.8);
     branch(windowHeight * .12);
   }
